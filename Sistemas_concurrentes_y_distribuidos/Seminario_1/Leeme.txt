@@ -1,0 +1,7 @@
+Compilar y probar:
+    gcc -g -c fun_tiempo.c
+    # compila "fun_tiempo.c" y genera "fun_tiempo.o"
+    g++ -g -c calculopi.cpp
+    # compila "calculopi.cpp" y genera "calculopi.o"
+    g++ -o ejemplo calculopi.o fun_tiempo.o -lrt -lpthread
+    # genera el ejecutable ejemplo con los objetos anteriores y las opciones para poder usar el tiempo

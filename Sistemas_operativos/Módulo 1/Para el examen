@@ -1,0 +1,14 @@
+Respuesta a la pregunta 1:
+    - Cogemos y ejecutamos el script con la opción de & al final para que sea en segundo plano y acto seguido ponemos el comando top y buscamos nuestro script, en caso de querer verlo más claro cogemos y nos fijamos en el pid del proceso y luego cogemos y escribimos top -p "pid"
+Respuesta a la pregunta 2:
+    - Para resolver esto tenemos que escribir el comando fdisk -l | grep "ruta a inspeccionar", lo que hace este comando es mirar todos los discos montados y solo mostrarte el que coincida con esa ruta. fdisk -l necesita permisos de administrador.
+Respuesta a la pregunta 3:
+    - Hay que señalar lo que queremos escribir en el archivo, por ejemplo el comando ifconfig, Y ponemos ifconfig >> "date’ +%Y_%m_%d". Después de esto, ponemos el planificador, at now +1 minute y luego el comando a ejecutar.
+Respuesta a la pregunta 4:
+    - Con el comando id adriii podemos ver los grupos a los que pertenece el usuario y su identificativo numérico.
+Respuesta a la pregunta 5:
+    - Hay varias opciones, la más básica es cat /etc/group y ahí salen todos los usuarios, tambien con members, per hay que instalarlo y con lid pero pasa lo mismo.
+Respuesta a la pregunta 6:
+    - La manera más sencilla es creando un hardlink con el comando ln archivo.txt hardlink
+Respuesta a la pregunta 7:
+    - Usaremos el comando free -m. watch -n 300 free -m > reporte
